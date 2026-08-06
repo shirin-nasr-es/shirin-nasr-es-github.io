@@ -3,13 +3,28 @@
 
 <head>
   <meta charset="utf-8">
+
   <title>Portfolio - Shirin Nasr Esfahani</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portfolio of Shirin Nasr Esfahani featuring UAV-based photogrammetry, bridge digital twins, 3D reconstruction, point-cloud processing, and RGB-LiDAR registration."
+  >
 
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
   <style type="text/css">
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       padding-top: 20px;
       padding-bottom: 40px;
@@ -18,122 +33,605 @@
     }
 
     .container-narrow {
-      margin: 0 auto;
+      width: 100%;
       max-width: 1220px;
+      margin: 0 auto;
       background-color: #ffffff;
     }
 
     .container-narrow > hr {
       margin: 30px 0;
     }
+
+    .masthead:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+
+    .project-section {
+      margin-bottom: 50px;
+    }
+
+    .project-title {
+      margin-top: 0;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+
+    .project-description {
+      margin-bottom: 14px;
+      font-size: 14px;
+      line-height: 1.55;
+      text-align: justify;
+    }
+
+    .tools-line {
+      margin-top: 12px;
+      margin-bottom: 25px;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    /*
+      Two-column layout for the Old U.S. 66 Bridge figures.
+    */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      width: 100%;
+      margin: 22px auto 0 auto;
+    }
+
+    .figure-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+      margin: 0;
+      padding: 6px;
+      border: 1px solid #777777;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .figure-card img {
+      display: block;
+      width: 100%;
+      height: 360px;
+      margin: 0 auto;
+      object-fit: contain;
+      background-color: #ffffff;
+    }
+
+    .panel-label {
+      margin: 7px 0 2px 0;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    .figure-caption {
+      width: 100%;
+      max-width: 1150px;
+      margin: 10px auto 38px auto;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /*
+      Responsive formatting for the existing full-width figures.
+    */
+    .single-figure {
+      width: 100%;
+      margin: 25px auto 40px auto;
+      text-align: center;
+    }
+
+    .single-figure img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .single-figure figcaption {
+      width: 100%;
+      max-width: 1150px;
+      margin: 8px auto 0 auto;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .section-divider {
+      margin: 45px 0;
+    }
+
+    .copyright {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    /*
+      Tablet and mobile layout.
+    */
+    @media (max-width: 768px) {
+
+      body {
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+
+      .nav-pills.pull-right {
+        float: none;
+        margin-top: 10px;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .figure-card img {
+        height: auto;
+        max-height: none;
+      }
+
+      .project-description {
+        text-align: left;
+      }
+    }
+
   </style>
 </head>
+
+
 <body>
 
-<div class="container">
-  <div class="container-narrow">
+  <div class="container">
 
-    <div class="masthead">
-      <ul class="nav nav-pills pull-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li class="active"><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="Shirin_NasrEsfahani_CV_06_26_Web.pdf" target="_blank">CV</a></li>
-      </ul>
+    <div class="container-narrow">
+
+      <!-- Navigation -->
+      <div class="masthead">
+
+        <ul class="nav nav-pills pull-right">
+
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="academics.html">Academics</a>
+          </li>
+
+          <li>
+            <a href="publications.html">Publications</a>
+          </li>
+
+          <li>
+            <a href="experience.html">Experience</a>
+          </li>
+
+          <li class="active">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li>
+            <a
+              href="Shirin_NasrEsfahani_CV_06_26_Web.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              CV
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <hr>
+
+      <h3>Portfolio</h3>
+
+      <hr>
+
+
+      <!-- =========================================================
+           MOST RECENT PROJECT
+           ========================================================= -->
+
+      <section class="project-section">
+
+        <h4 class="project-title">
+          Video-Based 3D Reconstruction of the Old U.S. 66 Bridge
+        </h4>
+
+        <p class="project-description">
+
+          A 4-minute and 35-second video of the Old U.S. 66 Bridge over
+          Roubidoux Creek in Waynesville, Missouri, was captured using a
+          manually operated Skydio 2+ UAV. From 8,270 extracted frames,
+          histogram-based filtering retained 680 representative images.
+          The selected images were processed in Agisoft Metashape
+          Professional 2.1.0 to generate a colorized dense point cloud,
+          a confidence visualization, and a textured 3D mesh of the
+          concrete arch and pier.
+
+        </p>
+
+        <p class="tools-line">
+
+          <b>Tools &amp; Methods:</b>
+          Python · OpenCV · Agisoft Metashape Professional 2.1.0 ·
+          Skydio 2+ · UAV Videography · Histogram-Based Frame Selection ·
+          Photogrammetry · Structure from Motion · Dense Point Cloud ·
+          Textured 3D Mesh
+
+        </p>
+
+
+        <!-- Figure 1: Main reconstruction results -->
+
+        <div class="portfolio-grid">
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 1.jpg"
+              alt="General view of the Old U.S. 66 Bridge over Roubidoux Creek"
+            >
+
+            <figcaption class="panel-label">
+              (a) General bridge view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 2(1).png"
+              alt="Representative frame extracted from the UAV inspection video"
+            >
+
+            <figcaption class="panel-label">
+              (b) Representative video frame
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 7.png"
+              alt="Colorized dense point cloud of the concrete bridge arch and pier"
+            >
+
+            <figcaption class="panel-label">
+              (c) Colorized dense point cloud
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 3.png"
+              alt="Textured 3D mesh of the concrete bridge arch and pier"
+            >
+
+            <figcaption class="panel-label">
+              (d) Textured 3D mesh
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+
+        <p class="figure-caption">
+
+          <b>Figure 1.</b>
+          Video-based 3D reconstruction of the Old U.S. 66 Bridge over
+          Roubidoux Creek in Waynesville, Missouri:
+          (a) general view of the bridge,
+          (b) representative frame from the UAV video,
+          (c) colorized dense point cloud, and
+          (d) final textured 3D mesh.
+
+        </p>
+
+
+        <!-- Figure 2: Additional model views and confidence -->
+
+        <div class="portfolio-grid">
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 4.png"
+              alt="Front view of the reconstructed concrete bridge pier"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (a) Front pier view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 5.png"
+              alt="Side view of the reconstructed concrete bridge arch"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (b) Arch underside view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 6(1).png"
+              alt="Opposite-side view of the reconstructed concrete bridge arch"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (c) Opposite-side model view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 8.png"
+              alt="Dense point cloud displayed according to reconstruction confidence"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (d) Confidence visualization
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+
+        <p class="figure-caption">
+
+          <b>Figure 2.</b>
+          Detailed model views and reconstruction-confidence assessment:
+          (a–c) textured 3D mesh viewed from multiple directions and
+          (d) dense point cloud displayed according to confidence.
+          Blue regions indicate higher-confidence points, while warmer
+          colors represent lower-confidence regions.
+
+        </p>
+
+      </section>
+
+
+      <hr class="section-divider">
+
+
+      <!-- =========================================================
+           EXISTING BRIDGE DIGITAL-TWIN PROJECT
+           ========================================================= -->
+
+      <section class="project-section">
+
+        <h4 class="project-title">
+          Fine-Detail 3D Bridge Digital Twin (Ongoing)
+        </h4>
+
+        <p class="project-description">
+
+          <b>Objective:</b>
+          Develop a high-fidelity digital twin of a bridge using UAV
+          imagery, photogrammetry, and 3D reconstruction techniques,
+          including point-cloud processing, dense mesh generation, and
+          SfM-based pipelines. Since GPS access is limited under the bridge,
+          the RGB-based 3D model is first generated in a local coordinate
+          system. The model is then aligned with LiDAR data to obtain
+          real-world scale and accurate measurements. The goal is to capture
+          fine structural details that support automated detection of defects
+          such as cracks, spalling, and corrosion, while enabling scalable
+          bridge inspection, condition assessment, and long-term structural
+          monitoring.
+
+        </p>
+
+        <p class="tools-line">
+
+          <b>Tools &amp; Methods:</b>
+          Python · OpenCV · Agisoft Metashape Professional · CloudCompare ·
+          LiDAR · RGB Camera · Point-Cloud Processing · Photogrammetry ·
+          Structure from Motion · Sensor Fusion · Skydio 2+ · Elios 3
+
+        </p>
+
+
+        <!-- Existing Figure 1 becomes Figure 3 -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/SfM.png"
+            alt="Photogrammetric reconstruction workflow showing tie points, dense point cloud, and textured mesh"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 3.</b>
+            Photogrammetric reconstruction workflow illustrating the
+            generation of a 3D model of the bridge deck and girders from
+            UAV imagery:
+            (a) tie-point cloud,
+            (b) dense point cloud, and
+            (c) final textured 3D mesh.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- Existing Figure 2 becomes Figure 4 -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/RGB–LiDAR Point Cloud Registration.png"
+            alt="RGB-to-LiDAR point-cloud registration process"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 4.</b>
+            RGB-to-LiDAR point-cloud registration process:
+            (a) RGB-derived point cloud in its original local coordinate
+            system,
+            (b) LiDAR point cloud in a metric coordinate system,
+            (c) RGB and LiDAR point clouds before registration, and
+            (d) co-registered point clouds in a common metric coordinate
+            frame.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- Existing Figure 3 becomes Figure 5 -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/south-view_10th St_bridge.png"
+            alt="Large-scale reconstruction of the bridge generated from UAV imagery"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 5.</b>
+            Large-scale 3D reconstruction of the bridge generated from
+            UAV imagery.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- Existing Figure 4 becomes Figure 6 -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/fine-details.png"
+            alt="Fine-detail bridge reconstruction showing a magnified area of corrosion and paint deterioration"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 6.</b>
+            Fine-detail RGB-based 3D reconstruction:
+            (a) full bridge reconstruction generated from UAV imagery using
+            a photogrammetry and SfM-based pipeline, with the orange box
+            identifying the magnified region, and
+            (b) detailed view showing surface corrosion, paint deterioration,
+            and structural features captured at high resolution.
+
+          </figcaption>
+
+        </figure>
+
+
+        <!-- Existing Figure 5 becomes Figure 7 -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/RGB-LiDAR_alignment.png"
+            alt="Alignment of the RGB-derived bridge reconstruction with LiDAR data"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 7.</b>
+            Alignment of the RGB-derived 3D reconstruction with LiDAR data
+            for real-world measurement in a GPS-denied bridge environment:
+            (a) LiDAR reference point cloud,
+            (b) RGB dense point cloud,
+            (c) RGB and LiDAR point clouds before alignment,
+            (d) RGB and LiDAR point clouds after alignment, and
+            (e) real-scale measurement using the aligned RGB–LiDAR models.
+            The illustrated pier height, measured from the pier cap to the
+            ground, is approximately 4.1 m.
+
+          </figcaption>
+
+        </figure>
+
+      </section>
+
+
+      <hr>
+
+
+      <!-- Footer -->
+
+      <footer class="copyright">
+
+        <h6>
+          &copy;&nbsp;Shirin Nasr-Esfahani
+        </h6>
+
+      </footer>
+
     </div>
 
-    <hr>
-
-    <h3>Portfolio</h3>
-    <hr>
-    <h4>Fine-Detail 3D Bridge Digital Twin (Ongoing)</h4>
-
-    <p align="justify" style="font-size:14px">
-      <b>Objective:</b>
-      Develop a high-fidelity digital twin of a bridge using UAV imagery, photogrammetry, and 3D reconstruction techniques including point cloud processing, dense mesh generation, and SfM-based pipelines.
-      Since GPS access is limited under the bridge, the RGB-based 3D model is first generated in a local coordinate system. The model is then aligned with LiDAR data to obtain real-world scale and accurate measurements.
-      The goal is to capture fine structural details that support automated detection of defects such as cracks, spalling, and corrosion, while enabling scalable bridge inspection, condition assessment, and long-term structural monitoring. <br><br>
-      <b>Tools & Methods:</b> Python · OpenCV · Agisoft Metashape Professional · CloudCompare · LiDAR · RGB Camera · Point Cloud Processing · Photogrammetry · SfM · Sensor Fusion . Skydio2+ . Elios3
-    </p>
-    
-    <br><br>
-   <center>
-  <img src="images/portfolio/SfM.png" width="3160px">
-  <p style="font-size:14px">
-    <b>Figure 1.</b> Photogrammetric reconstruction workflow illustrating the generation of a 3D model of the bridge deck and girders from UAV imagery:<br>
-    (a)Tie point Cloud, (b)Dense pointcloud, (c) Final textured 3D mesh.
-    
-  </p>
-
-   <br><br>
-   <center>
-  <img src="images/portfolio/SfM.png" width="3160px">
-  <p style="font-size:14px">
-    <b>Figure 1.</b> Photogrammetric reconstruction workflow illustrating the generation of a 3D model of the bridge deck and girders from UAV imagery:<br>
-    (a)Tie point Cloud, (b)Dense pointcloud, (c) Final textured 3D mesh.
-    
-  </p>
-
-
-     
-</center>
-<br><br>
-    
-<center>
-  <img src="images/portfolio/RGB–LiDAR Point Cloud Registration.png" width="6910px">
-  <p style="font-size:14px">
-    <b>Figure 2.</b> RGB-to-LiDAR point-cloud registration process: (a) RGB-derived point cloud in its original local coordinate system, (b) LiDAR point cloud in a metric coordinate system, (c) RGB and LiDAR point clouds before registration, and (d) co-registered point clouds in a common metric coordinate frame.
-  </p>
-</center>
-<br><br>
-<center>
-  <img src="images/portfolio/south-view_10th St_bridge.png" width="2414px">
-  <p style="font-size:14px">
-    <b>Figure 3.</b> Large-scale 3D reconstruction of the bridge generated from UAV imagery.
-  </p>
-</center>
-<br><br>
-    
-<center>
-  <img src="images/portfolio/fine-details.png" width="3513px">
-  <p style="font-size:14px">
-    <b>Figure 4.</b> Fine-Detail 3D Bridge Digital Twin — RGB-Based 3D Reconstruction:<br>
-    (a) Full 3D reconstruction of the bridge generated from UAV imagery using photogrammetry and SfM-based pipeline. The orange box highlights the region shown in the magnified view., 
-    (b) Magnified fine-detail view showing surface corrosion, paint deterioration, and structural defects captured at high resolution, demonstrating the system's capability to resolve fine structural details critical for bridge inspection and condition assessment.
-</center>        
-    <br><br>
-
-<center>
-  <img src="images/portfolio/RGB-LiDAR_alignment.png" width="1272px">
-  <p style="font-size:14px">
-    <b>Figure 5.</b> Alignment of the RGB-derived 3D reconstruction with LiDAR data for real-world measurement in GPS-denied bridge environments:<br>
-    (a) LiDAR reference point cloud, (b) RGB dense point cloud, (c) RGB and LiDAR point clouds before alignment, (d) RGB and LiDAR point clouds after alignment <br>
-    (e) Aligned RGB-LiDAR models enables real-scale bridge measurement in GPS-denied under-bridge environments (e.g., the pier height, measured from the pier cap to the ground, is approximately 4.1 m).
-</center>        
-    <br><br>
-
-    
-    <hr>
-    <center><h6>&copy;&nbsp;Shirin Nasr-Esfahani</h6></center>
-
   </div>
-</div>
-    
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap-transition.js"></script>
-<script src="js/bootstrap-alert.js"></script>
-<script src="js/bootstrap-modal.js"></script>
-<script src="js/bootstrap-dropdown.js"></script>
-<script src="js/bootstrap-scrollspy.js"></script>
-<script src="js/bootstrap-tab.js"></script>
-<script src="js/bootstrap-tooltip.js"></script>
-<script src="js/bootstrap-popover.js"></script>
-<script src="js/bootstrap-button.js"></script>
-<script src="js/bootstrap-collapse.js"></script>
-<script src="js/bootstrap-carousel.js"></script>
-<script src="js/bootstrap-typeahead.js"></script>
+
+
+  <!-- JavaScript -->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap-transition.js"></script>
+  <script src="js/bootstrap-alert.js"></script>
+  <script src="js/bootstrap-modal.js"></script>
+  <script src="js/bootstrap-dropdown.js"></script>
+  <script src="js/bootstrap-scrollspy.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <script src="js/bootstrap-popover.js"></script>
+  <script src="js/bootstrap-button.js"></script>
+  <script src="js/bootstrap-collapse.js"></script>
+  <script src="js/bootstrap-carousel.js"></script>
+  <script src="js/bootstrap-typeahead.js"></script>
 
 </body>
+
 </html>
