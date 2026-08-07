@@ -124,7 +124,7 @@
     }
 
     /*
-      Full-width figures
+      Full-width figures for the 10th Street Bridge section
     */
     .single-figure {
       width: 100%;
@@ -159,7 +159,7 @@
     }
 
     /*
-      Mobile / tablet layout
+      Tablet and mobile layout
     */
     @media (max-width: 768px) {
 
@@ -183,4 +183,567 @@
       }
 
       .project-description,
-      .tools
+      .tools-line {
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <div class="container-narrow">
+
+
+      <!-- =========================================================
+           NAVIGATION
+           ========================================================= -->
+
+      <div class="masthead">
+
+        <ul class="nav nav-pills pull-right">
+
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="academics.html">Academics</a>
+          </li>
+
+          <li>
+            <a href="publications.html">Publications</a>
+          </li>
+
+          <li>
+            <a href="experience.html">Experience</a>
+          </li>
+
+          <li class="active">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li>
+            <a
+              href="Shirin_NasrEsfahani_CV_06_26_Web.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              CV
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <hr>
+
+      <h3>Portfolio</h3>
+
+      <hr>
+
+
+
+      <!-- =========================================================
+           PROJECT 1
+           OLD U.S. 66 BRIDGE
+           ========================================================= -->
+
+      <section class="project-section">
+
+
+        <h4 class="project-title">
+          Video-Based 3D Reconstruction of the Old U.S. 66 Bridge
+        </h4>
+
+
+        <p class="project-description">
+
+          A 4-minute and 35-second video of the Old U.S. 66 Bridge over
+          Roubidoux Creek in Waynesville, Missouri, was captured using a
+          manually operated Skydio 2+ UAV. From 8,270 extracted frames,
+          histogram-based filtering retained 680 representative images.
+          The selected images were processed in Agisoft Metashape
+          Professional 2.1.0 to generate a colorized dense point cloud,
+          a reconstruction-confidence visualization, and a textured 3D
+          model of the concrete arch and pier. The RGB-derived reconstruction
+          was subsequently aligned with sonar point-cloud data in
+          CloudCompare to support multimodal spatial integration.
+
+        </p>
+
+
+        <p class="tools-line">
+
+          <b>Tools &amp; Methods:</b>
+          Python · OpenCV · Agisoft Metashape Professional 2.1.0 ·
+          CloudCompare · Skydio 2+ · UAV Videography ·
+          Histogram-Based Frame Selection · Photogrammetry ·
+          Structure from Motion · Dense Point Cloud · Textured 3D Model ·
+          Sonar · RGB–Sonar Point-Cloud Alignment
+
+        </p>
+
+
+
+        <!-- =====================================================
+             FIGURE 1
+             ===================================================== -->
+
+        <div class="portfolio-grid">
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 1.jpg"
+              alt="General view of the Old U.S. 66 Bridge over Roubidoux Creek"
+            >
+
+            <figcaption class="panel-label">
+              (a) General bridge view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 2.png"
+              alt="Representative frame extracted from the UAV video"
+            >
+
+            <figcaption class="panel-label">
+              (b) Representative video frame
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 7.png"
+              alt="Colorized dense point cloud of the bridge arch and pier"
+            >
+
+            <figcaption class="panel-label">
+              (c) Colorized dense point cloud
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 3.png"
+              alt="Textured 3D model of the concrete bridge arch and pier"
+            >
+
+            <figcaption class="panel-label">
+              (d) Textured 3D model
+            </figcaption>
+
+          </figure>
+
+
+        </div>
+
+
+        <p class="figure-caption">
+
+          <b>Figure 1.</b>
+          Video-based 3D reconstruction of the Old U.S. 66 Bridge over
+          Roubidoux Creek in Waynesville, Missouri:
+          (a) general view of the bridge,
+          (b) representative frame extracted from the UAV video,
+          (c) colorized dense point cloud, and
+          (d) textured 3D model.
+
+        </p>
+
+
+
+        <!-- =====================================================
+             FIGURE 2
+             ===================================================== -->
+
+        <div class="portfolio-grid">
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 4.png"
+              alt="Front view of the reconstructed concrete bridge pier"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (a) Front pier view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 5.png"
+              alt="Side view of the reconstructed concrete bridge arch"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (b) Arch underside view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 6.png"
+              alt="Opposite-side view of the reconstructed bridge arch"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (c) Opposite-side model view
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 8.png"
+              alt="Dense point cloud displayed according to reconstruction confidence"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (d) Confidence visualization
+            </figcaption>
+
+          </figure>
+
+
+        </div>
+
+
+        <p class="figure-caption">
+
+          <b>Figure 2.</b>
+          Detailed reconstruction views and confidence assessment:
+          (a–c) textured 3D model viewed from multiple directions and
+          (d) dense point cloud visualized according to reconstruction
+          confidence. Blue regions represent higher-confidence points,
+          while warmer colors indicate lower-confidence regions.
+
+        </p>
+
+
+
+        <!-- =====================================================
+             FIGURE 3
+             SONAR + RGB ALIGNMENT IN CLOUDCOMPARE
+             ===================================================== -->
+
+        <div class="portfolio-grid">
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 9.png"
+              alt="Sonar point cloud visualized in CloudCompare"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (a) Sonar point cloud
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="figure-card">
+
+            <img
+              src="images/portfolio/Fig 10.png"
+              alt="RGB-derived 3D reconstruction aligned with sonar point-cloud data in CloudCompare"
+              loading="lazy"
+            >
+
+            <figcaption class="panel-label">
+              (b) RGB–sonar alignment
+            </figcaption>
+
+          </figure>
+
+
+        </div>
+
+
+        <p class="figure-caption">
+
+          <b>Figure 3.</b>
+          RGB–sonar point-cloud alignment in CloudCompare:
+          (a) sonar point cloud visualized using scalar-field coloring and
+          (b) aligned RGB-derived 3D reconstruction and sonar point cloud
+          displayed in a common spatial frame.
+
+        </p>
+
+
+      </section>
+
+
+
+      <hr class="section-divider">
+
+
+
+      <!-- =========================================================
+           PROJECT 2
+           10TH STREET BRIDGE, ROLLA, MISSOURI
+           ========================================================= -->
+
+      <section class="project-section">
+
+
+        <h4 class="project-title">
+          Fine-Detail 3D Digital Twin of the 10th Street Bridge,
+          Rolla, Missouri (Ongoing)
+        </h4>
+
+
+        <p class="project-description">
+
+          <b>Objective:</b>
+          Develop a high-fidelity 3D digital twin of the 10th Street Bridge
+          in Rolla, Missouri, using UAV imagery, photogrammetry, LiDAR, and
+          multimodal point-cloud processing. Since GPS access is limited
+          beneath the bridge, the RGB-based reconstruction is initially
+          generated in a local coordinate system and subsequently aligned
+          with LiDAR data to establish metric scale and enable real-world
+          measurements. The reconstruction is designed to preserve fine
+          structural and surface details relevant to bridge inspection,
+          defect assessment, and long-term condition monitoring.
+
+        </p>
+
+
+        <p class="tools-line">
+
+          <b>Tools &amp; Methods:</b>
+          Python · OpenCV · Agisoft Metashape Professional ·
+          CloudCompare · LiDAR · RGB Camera · UAV Imagery ·
+          Point-Cloud Processing · Photogrammetry · Structure from Motion ·
+          Dense Reconstruction · RGB–LiDAR Registration · Sensor Fusion ·
+          Skydio 2+ · Elios 3
+
+        </p>
+
+
+
+        <!-- =====================================================
+             FIGURE 4
+             ===================================================== -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/SfM.png"
+            alt="Photogrammetric reconstruction workflow for the 10th Street Bridge"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 4.</b>
+            Photogrammetric reconstruction workflow for the 10th Street
+            Bridge, illustrating the generation of a 3D model of the bridge
+            deck and girders from UAV imagery:
+            (a) tie-point cloud,
+            (b) dense point cloud, and
+            (c) final textured 3D mesh.
+
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- =====================================================
+             FIGURE 5
+             ===================================================== -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/RGB–LiDAR Point Cloud Registration.png"
+            alt="RGB-to-LiDAR point-cloud registration for the 10th Street Bridge"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 5.</b>
+            RGB-to-LiDAR point-cloud registration for the 10th Street Bridge:
+            (a) RGB-derived point cloud in its original local coordinate
+            system,
+            (b) LiDAR point cloud in a metric coordinate system,
+            (c) RGB and LiDAR point clouds before registration, and
+            (d) co-registered point clouds in a common metric coordinate
+            frame.
+
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- =====================================================
+             FIGURE 6
+             ===================================================== -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/south-view_10th St_bridge.png"
+            alt="Large-scale 3D reconstruction of the 10th Street Bridge in Rolla Missouri"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 6.</b>
+            Large-scale 3D reconstruction of the 10th Street Bridge in
+            Rolla, Missouri, generated from UAV imagery.
+
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- =====================================================
+             FIGURE 7
+             ===================================================== -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/fine-details.png"
+            alt="Fine-detail 3D reconstruction of the 10th Street Bridge"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 7.</b>
+            Fine-detail RGB-based reconstruction of the 10th Street Bridge:
+            (a) full 3D reconstruction generated from UAV imagery using a
+            photogrammetry and SfM-based pipeline, with the orange box
+            identifying the magnified region, and
+            (b) detailed view showing surface corrosion, paint deterioration,
+            and structural features captured at high resolution.
+
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- =====================================================
+             FIGURE 8
+             ===================================================== -->
+
+        <figure class="single-figure">
+
+          <img
+            src="images/portfolio/RGB-LiDAR_alignment.png"
+            alt="RGB-LiDAR alignment and real-world measurement of the 10th Street Bridge"
+            loading="lazy"
+          >
+
+          <figcaption>
+
+            <b>Figure 8.</b>
+            Alignment of the RGB-derived reconstruction of the 10th Street
+            Bridge with LiDAR data for real-world measurement in a
+            GPS-denied under-bridge environment:
+            (a) LiDAR reference point cloud,
+            (b) RGB dense point cloud,
+            (c) RGB and LiDAR point clouds before alignment,
+            (d) RGB and LiDAR point clouds after alignment, and
+            (e) real-scale measurement using the aligned RGB–LiDAR models.
+            The illustrated pier height, measured from the pier cap to the
+            ground, is approximately 4.1 m.
+
+          </figcaption>
+
+        </figure>
+
+
+      </section>
+
+
+
+      <hr>
+
+
+
+      <!-- =========================================================
+           FOOTER
+           ========================================================= -->
+
+      <footer class="copyright">
+
+        <h6>
+          &copy;&nbsp;Shirin Nasr-Esfahani
+        </h6>
+
+      </footer>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap-transition.js"></script>
+  <script src="js/bootstrap-alert.js"></script>
+  <script src="js/bootstrap-modal.js"></script>
+  <script src="js/bootstrap-dropdown.js"></script>
+  <script src="js/bootstrap-scrollspy.js"></script>
+  <script src="js/bootstrap-tab.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <script src="js/bootstrap-popover.js"></script>
+  <script src="js/bootstrap-button.js"></script>
+  <script src="js/bootstrap-collapse.js"></script>
+  <script src="js/bootstrap-carousel.js"></script>
+  <script src="js/bootstrap-typeahead.js"></script>
+
+
+</body>
+
+</html>
